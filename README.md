@@ -9,6 +9,9 @@ npm install
 npm run dev
 ```
 
+## Demo
+[https://task-manager-dashboard-gamma.vercel.app/](https://task-manager-dashboard-gamma.vercel.app/)
+
 ## Features Implemented
 
 - Create tasks with title and priority (High / Medium / Low)
