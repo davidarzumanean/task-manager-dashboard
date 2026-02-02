@@ -1,0 +1,14 @@
+@theme {
+    /* Surfaces */
+    --color-bg: #f9fafb;
+    --color-surface: #ffffff;
+    --color-border: #e5e7eb;
+
+    /* Priority */
+    --color-priority-high: #dc2626;
+    --color-priority-medium: #ca8a04;
+    --color-priority-low: #16a34a;
+
+    /* States */
+    --color-task-completed: #6b7280;
+}
