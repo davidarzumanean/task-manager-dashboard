@@ -1,7 +1,8 @@
-import type { TaskPriority } from "@/types/task.ts";
+import type { TaskPriority } from "@/types/task";
 
 type PrioritySelectProps = {
   id?: string;
+  ariaLabel?: string;
   priority: TaskPriority;
   className?: string;
   onChange: (priority: TaskPriority) => void;
@@ -17,6 +18,7 @@ const TASK_PRIORITIES: ReadonlyArray<TaskPriority> = ["high", "medium", "low"];
 
 export const PrioritySelect = ({
   id = "priority-select",
+  ariaLabel = "Task priority",
   priority,
   className = "",
   onChange,
@@ -27,6 +29,7 @@ export const PrioritySelect = ({
       name="priority"
       value={priority}
       onChange={(e) => onChange(e.target.value as TaskPriority)}
+      aria-label={ariaLabel}
       className={`mt-1 rounded-md border border-border bg-surface px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-slate-300 ${className}`}
     >
       {TASK_PRIORITIES.map((p) => (
